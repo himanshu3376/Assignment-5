@@ -1,6 +1,8 @@
 //
 //  CalculationForBMI.swift
 //  
+//  The class produces the values of the three primary variables outputted for an enterred weight and height. Depending on the critera that the BMI
+//  falls under, the respective values are displayed.
 //
 //  Created by Himanshu Sehgal on 2020-07-23.
 //

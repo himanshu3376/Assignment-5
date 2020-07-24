@@ -2,6 +2,10 @@
 //  ViewController.swift
 //  calculator
 //
+//  This class acts as one of the three segments of this application, its primary focus is on the calculator portion of the application.
+//  The calculator appplication UI has been designed in the storyboard and respective links to interactive buttons placed below. Other than
+//  the primary function of acting as a calculator, the app also offers the option to choose one of the three themes provided.
+//
 //  Created by Himanshu Sehgal on 2020-06-26.
 //  Copyright © 2020 Himanshu Sehgal. All rights reserved.
 //
@@ -33,7 +37,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func operatorButton(_ sender: UIButton) {
-    
+    // THe following block of 'IF' statements print the operation type that was selected by the user depending on its sender tag.
+        
         if result.text != "" && sender.tag != 11 && sender.tag != 16 {
             firstNumber = Double(result.text!)!
             
@@ -116,6 +121,8 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var darkGreyBig: UIButton!
+    
+    //The following code blocks focuses on altering the background image of each category of button to match image to the theme selected.
     
     @IBAction func defaultTheme(_ sender: UIButton) {
         //set theme for light buttons
