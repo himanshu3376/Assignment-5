@@ -7,7 +7,153 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--BMI-->
+        <scene sceneID="WMW-Kn-uAw">
+            <objects>
+                <viewController id="OR6-Ne-rii" customClass="BMIViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zx4-N1-6KM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calculate_background" translatesAutoresizingMaskIntoConstraints="NO" id="8jV-T3-dcD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CALCULATE YOUR BMI" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6E-9w-vPP">
+                                <rect key="frame" x="20" y="270" width="288" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="0.67683935169999998" green="0.67693626880000002" blue="0.67680889369999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="aNf-Te-0nY">
+                                <rect key="frame" x="18" y="597" width="378" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeHeight:" destination="OR6-Ne-rii" eventType="valueChanged" id="aRY-Dd-YxZ"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="CF4-in-OCc">
+                                <rect key="frame" x="18" y="698" width="378" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeWeight:" destination="OR6-Ne-rii" eventType="valueChanged" id="KF9-OJ-IZ1"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuu-hy-dNU">
+                                <rect key="frame" x="20" y="548" width="51" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.67683935169999998" green="0.67693626880000002" blue="0.67680889369999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.5m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydh-st-Kjc">
+                                <rect key="frame" x="311" y="548" width="83" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.67683935169999998" green="0.67693626880000002" blue="0.67680889369999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g18-Pb-bBe">
+                                <rect key="frame" x="20" y="659" width="54" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.67683935169999998" green="0.67693626880000002" blue="0.67680889369999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="80Kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2MP-ju-4vm">
+                                <rect key="frame" x="311" y="659" width="82" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.67683935169999998" green="0.67693626880000002" blue="0.67680889369999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYU-5W-9mw">
+                                <rect key="frame" x="20" y="744" width="373" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91532164810000005" green="0.68829858300000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="CALCULATE">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculate:" destination="OR6-Ne-rii" eventType="touchUpInside" id="905-KZ-ZZ3"/>
+                                    <segue destination="5cd-yc-DFt" kind="presentation" identifier="FinalBMIViewController" id="iB2-z1-OzP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="N65-L9-n0g"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="BMI" image="heart.fill" catalog="system" id="Iv5-uh-Zqf"/>
+                    <connections>
+                        <outlet property="heightSlider" destination="aNf-Te-0nY" id="JE1-Oo-UNn"/>
+                        <outlet property="heightText" destination="Ydh-st-Kjc" id="cuh-3m-OSi"/>
+                        <outlet property="weightSlider" destination="CF4-in-OCc" id="pBa-Ax-wQc"/>
+                        <outlet property="weightText" destination="2MP-ju-4vm" id="3LL-ts-w3Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbL-ua-VGr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="-556.47321428571422"/>
+        </scene>
+        <!--FinalBMI View Controller-->
+        <scene sceneID="gBr-Vp-q2I">
+            <objects>
+                <viewController id="5cd-yc-DFt" customClass="FinalBMIViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qsK-7D-i3y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="final_background" translatesAutoresizingMaskIntoConstraints="NO" id="kan-JA-Xdf">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOUR RESULT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4E-IP-IJz">
+                                <rect key="frame" x="104" y="323" width="233" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.77404076437123281" green="0.818711739690411" blue="0.7167275580835617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EV-03-aAk">
+                                <rect key="frame" x="131" y="373" width="178" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="80"/>
+                                <color key="textColor" red="0.77404076437123281" green="0.818711739690411" blue="0.7167275580835617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOUR BMI IS HEALTHY." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvb-OA-oKG">
+                                <rect key="frame" x="20" y="477" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.77404076437123281" green="0.818711739690411" blue="0.7167275580835617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOd-JP-20Y">
+                                <rect key="frame" x="20" y="759" width="374" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8050650358" green="0.84152251479999995" blue="0.74087458849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="RECALCULATE"/>
+                                <connections>
+                                    <action selector="Recalculate:" destination="5cd-yc-DFt" eventType="touchUpInside" id="VPP-II-vAx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="OgS-kQ-g5k"/>
+                    </view>
+                    <connections>
+                        <outlet property="bmiAmountLabel" destination="3EV-03-aAk" id="jqt-Hn-YD8"/>
+                        <outlet property="recommendationLabel" destination="yvb-OA-oKG" id="UR1-ee-xZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cH0-fa-Ufr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1940.5797101449277" y="-556.47321428571422"/>
+        </scene>
+        <!--Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
@@ -264,7 +410,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" id="MKc-Vr-Cah"/>
+                    <tabBarItem key="tabBarItem" title="Calculator" image="number.square.fill" catalog="system" id="MKc-Vr-Cah"/>
                     <connections>
                         <outlet property="darkGrey1" destination="xqU-Q2-ews" id="EPH-Ks-Nvx"/>
                         <outlet property="darkGrey10" destination="Kjm-8u-J0D" id="7oT-Tg-eyz"/>
@@ -292,9 +438,10 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
         </scene>
-        <!--Item-->
+        <!--Tip-->
         <scene sceneID="odQ-gh-IK1">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLK-XE-Gh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="NNa-Hf-LaZ" customClass="TipCalculatorViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="66T-21-vbw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -390,10 +537,10 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.95002442600000003" green="0.64045840499999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.95002442600000003" green="0.75082334506849313" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="2Q4-KG-4vY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="tVy-o6-CLi"/>
+                    <tabBarItem key="tabBarItem" title="Tip" image="percent" catalog="system" id="tVy-o6-CLi"/>
                     <connections>
                         <outlet property="TenPercentButton" destination="GL7-Zf-MhU" id="vKf-ix-2kL"/>
                         <outlet property="TwentyPercentButton" destination="8Na-jx-RZV" id="RBM-dn-L0i"/>
@@ -402,7 +549,6 @@
                         <outlet property="splitAmountLabel" destination="Djp-bh-UnH" id="c86-IU-isc"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wLK-XE-Gh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1900.0000000000002" y="138.61607142857142"/>
         </scene>
@@ -480,6 +626,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="pCt-Xw-k99"/>
                         <segue destination="NNa-Hf-LaZ" kind="relationship" relationship="viewControllers" id="alH-nu-daj"/>
+                        <segue destination="OR6-Ne-rii" kind="relationship" relationship="viewControllers" id="3LP-5E-yOC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7r-mt-zCA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -489,9 +636,14 @@
     </scenes>
     <resources>
         <image name="calculateButton" width="2000" height="540"/>
+        <image name="calculate_background" width="375" height="812"/>
         <image name="darkGrey" width="860" height="810"/>
         <image name="darkGreyBig" width="1890" height="830"/>
+        <image name="final_background" width="375" height="812"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="lightGrey" width="860" height="810"/>
+        <image name="number.square.fill" catalog="system" width="128" height="114"/>
+        <image name="percent" catalog="system" width="128" height="118"/>
         <image name="test" width="860" height="810"/>
         <image name="theme1" width="1600" height="1200"/>
         <image name="theme2" width="1600" height="1200"/>

@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/himanshu/Google Drive/Documents/University of Ottawa/4. Fourth Year/Summer 2020/SEG2105/Assignment 3/calculator/calculator/FinalBMIViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/himanshu/Google Drive/Documents/University of Ottawa/4. Fourth Year/Summer 2020/SEG2105/Assignment 3/calculator/calculator/BMIVariables.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/himanshu/Google Drive/Documents/University of Ottawa/4. Fourth Year/Summer 2020/SEG2105/Assignment 3/calculator/calculator/CalculationForBMI.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/himanshu/Google Drive/Documents/University of Ottawa/4. Fourth Year/Summer 2020/SEG2105/Assignment 3/calculator/calculator/BMIViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:/Users/himanshu/Google Drive/Documents/University of Ottawa/4. Fourth Year/Summer 2020/SEG2105/Assignment 3/calculator/calculator/TabBarViewController.swift">
    </FileRef>
    <FileRef

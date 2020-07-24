@@ -15,6 +15,10 @@
 		A3AF73A524C904B6009EF138 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AF73A424C904B6009EF138 /* ViewController.swift */; };
 		A3AF73A724C904D8009EF138 /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AF73A624C904D8009EF138 /* TipCalculatorViewController.swift */; };
 		A3AF73A924C911C3009EF138 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AF73A824C911C2009EF138 /* FinalViewController.swift */; };
+		A3AF73AD24CA4A57009EF138 /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AF73AC24CA4A57009EF138 /* BMIViewController.swift */; };
+		A3AF73AF24CA5035009EF138 /* CalculationForBMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AF73AE24CA5035009EF138 /* CalculationForBMI.swift */; };
+		A3AF73B124CA5080009EF138 /* BMIVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AF73B024CA5080009EF138 /* BMIVariables.swift */; };
+		A3AF73B324CA5B98009EF138 /* FinalBMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AF73B224CA5B98009EF138 /* FinalBMIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		A3AF73A424C904B6009EF138 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3AF73A624C904D8009EF138 /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TipCalculatorViewController.swift; path = "/Users/himanshu/Google Drive/Documents/University of Ottawa/4. Fourth Year/Summer 2020/SEG2105/Assignment 3/calculator/calculator/TipCalculatorViewController.swift"; sourceTree = "<absolute>"; };
 		A3AF73A824C911C2009EF138 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FinalViewController.swift; path = "/Users/himanshu/Google Drive/Documents/University of Ottawa/4. Fourth Year/Summer 2020/SEG2105/Assignment 3/calculator/calculator/FinalViewController.swift"; sourceTree = "<absolute>"; };
+		A3AF73AC24CA4A57009EF138 /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BMIViewController.swift; path = "/Users/himanshu/Google Drive/Documents/University of Ottawa/4. Fourth Year/Summer 2020/SEG2105/Assignment 3/calculator/calculator/BMIViewController.swift"; sourceTree = "<absolute>"; };
+		A3AF73AE24CA5035009EF138 /* CalculationForBMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculationForBMI.swift; path = "/Users/himanshu/Google Drive/Documents/University of Ottawa/4. Fourth Year/Summer 2020/SEG2105/Assignment 3/calculator/calculator/CalculationForBMI.swift"; sourceTree = "<absolute>"; };
+		A3AF73B024CA5080009EF138 /* BMIVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BMIVariables.swift; path = "/Users/himanshu/Google Drive/Documents/University of Ottawa/4. Fourth Year/Summer 2020/SEG2105/Assignment 3/calculator/calculator/BMIVariables.swift"; sourceTree = "<absolute>"; };
+		A3AF73B224CA5B98009EF138 /* FinalBMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FinalBMIViewController.swift; path = "/Users/himanshu/Google Drive/Documents/University of Ottawa/4. Fourth Year/Summer 2020/SEG2105/Assignment 3/calculator/calculator/FinalBMIViewController.swift"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,10 @@
 				A3AF73A424C904B6009EF138 /* ViewController.swift */,
 				A3AF73A824C911C2009EF138 /* FinalViewController.swift */,
 				A3AF73A624C904D8009EF138 /* TipCalculatorViewController.swift */,
+				A3AF73AC24CA4A57009EF138 /* BMIViewController.swift */,
+				A3AF73AE24CA5035009EF138 /* CalculationForBMI.swift */,
+				A3AF73B024CA5080009EF138 /* BMIVariables.swift */,
+				A3AF73B224CA5B98009EF138 /* FinalBMIViewController.swift */,
 				A327E08724C90182009CEA46 /* View Controllers */,
 				A3676E4424A6D6FA002F06E9 /* Main.storyboard */,
 				A3676E4724A6D6FF002F06E9 /* Assets.xcassets */,
@@ -153,9 +165,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3AF73A924C911C3009EF138 /* FinalViewController.swift in Sources */,
+				A3AF73AF24CA5035009EF138 /* CalculationForBMI.swift in Sources */,
+				A3AF73AD24CA4A57009EF138 /* BMIViewController.swift in Sources */,
 				A3AF73A524C904B6009EF138 /* ViewController.swift in Sources */,
+				A3AF73B324CA5B98009EF138 /* FinalBMIViewController.swift in Sources */,
 				A3676E3F24A6D6FA002F06E9 /* AppDelegate.swift in Sources */,
 				A3AF73A724C904D8009EF138 /* TipCalculatorViewController.swift in Sources */,
+				A3AF73B124CA5080009EF138 /* BMIVariables.swift in Sources */,
 				A3676E4124A6D6FA002F06E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
