@@ -1,7 +1,6 @@
 # Assignment-5
  SEG 2105 Assignment 5
- 
-/Users/himanshu/Google Drive/Documents/University of Ottawa/4. Fourth Year/Summer 2020/SEG2105/Assignment 3/CalculatorAssets/Logo3.png
+
 
 Abstract and User Stories:
 
