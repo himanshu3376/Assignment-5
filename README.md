@@ -8,7 +8,9 @@ This project is an extension to the basic calculator application from assignment
 the user is able to use the calculator as an individual application while having access to a sub-application of a tip calculator, which allows the user to input the total amount for a bill, it allows the user to enter the tip percentage, and the number of the indivudals
 the bill will be split amongst, this will then result in an animated view controller that displays the final result. The last portion of the application ties into the calculation of an individual's body mass index (BMI). The application allows the user to input their respective
 height and weight to determine their BMI, this information is then displayed on an animated view controller. The application places an emphasis on simplicity and user design, the design is produced to offer a simple, easy to follow UI. The user is able to toggle 
-between the various applications with ease. In order to promote user experience, various assests used in the application such as the logo, app lauch screen, button UI, colour combinatios, were derieved using open source images and Adobe Photoshop, these 
+between the various applications with ease. 
+
+In order to promote user experience, various assests used in the application such as the logo, app lauch screen, button UI, colour combinatios, were derieved using open source images and Adobe Photoshop, these 
 assests can be located in the repository. The UI offers palce holder text in the tip calculator, to guide the user, once the results are displayed in the tip calculator and BMI calculator, an interactive button offers the user to recalculate their results, this offers the 
 user to be able to navigate between different view controllers and correct themselves if mistakes were made. The calculator application also offers the user to choose a UI theme to their liking.
 
