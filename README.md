@@ -42,3 +42,4 @@ Applications used in the development of this application:
         - https://colorhunt.co/ (for colour scheme for themes in the calculator)
         - https://logomakr.com/ (for the development of the logo)
 
+The overall repository contains a folder for 'Calculator Assets', this contains all graphical content that was used in the development of the application. The license for the application can be found in the root of the repository. Within the sub-folder 'calculator' contains all XCode and Swift files pertaining to the application. Within the sub-folder of that called 'calculator' you will find all pertaining swift files for each viewcontroller along side the supporting caluclation classes.
